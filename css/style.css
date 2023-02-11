@@ -114,7 +114,6 @@ img {
 
 .grid {
     display: grid;
-    align-items: center;
 }
 
 /* Navbar Section */
@@ -131,6 +130,11 @@ nav {
 .nav-container {
     height: 100%;
     justify-content: space-between;
+}
+
+.window-scroll {
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 nav button {
@@ -151,7 +155,7 @@ nav button {
     color: var(--color-bg2);
 }
 
-/* Header */
+/* Header Section */
 
 header {
     position: relative;
@@ -165,8 +169,80 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     height: 100%;
+    align-items: center;
 }
 
 .header-left p {
     margin: 1.2rem 0 2.5rem;
+}
+
+/* Category Section */
+
+.categories {
+    background: var(--color-bg1);
+    height: 29rem;
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories-container {
+    grid-template-columns: 40% 60%;
+}
+
+.categories-left {
+    margin-right: 4rem;
+}
+
+.categories-left p {
+    margin: 1rem 0 3rem;
+}
+
+.categories-right {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.category-card {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.category-card p {
+    font-size: 0.85rem;
+}
+
+.category-card:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.category-icon {
+    background: var(--color-primary);
+    padding: 0.7rem 1rem;
+    border-radius: 0.9rem;
+}
+
+.category-card h5 {
+    margin: 1.3rem 0 0.5rem;
+}
+
+.category-card:nth-child(2) .category-icon {
+    background-color: var(--color-danger);
+}
+
+.category-card:nth-child(3) .category-icon {
+    background-color: var(--color-success);
+}
+
+.category-card:nth-child(4) .category-icon {
+    background-color: var(--color-warning);
+}
+
+.category-card:nth-child(5) .category-icon {
+    background-color: var(--color-success);
 }
