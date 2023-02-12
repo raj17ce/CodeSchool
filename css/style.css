@@ -246,3 +246,35 @@ header {
 .category-card:nth-child(5) .category-icon {
     background-color: var(--color-success);
 }
+
+/* Courses Section */
+
+.courses {
+    margin-top: 7rem;
+}
+
+.courses-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.course-card {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course-card:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course-info {
+    padding: 2rem;
+}
+
+.course-info p {
+    padding: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
