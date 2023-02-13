@@ -8,10 +8,18 @@
         <meta name="description" content="This is an online Coding School, which provides courses around coding.">
 
         <link rel="stylesheet" href="./css/style.css">
+
+        <!-- IconScout CDN -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!-- Google Fonts -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
         </style>
+
+        <!-- Swiper JS CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     </head>
     <body>
 
@@ -278,6 +286,114 @@
 
         <!-- FAQs Sectin Ends -->
 
+        <!-- Testimonials Section Starts -->
+
+        <section class="testimonials container testimonials-container mySwiper">
+
+                <h2>Student's Testimonials</h2>
+                <div class="swiper-wrapper">
+                    <article class="testimonial-card swiper-slide">
+                        <div class="avatar">
+                            <img src="./images/avatar1.jpg" alt="Avatar 1">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Diana Ayi</h5>
+                            <small>Student</small>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi cupiditate perferendis voluptatibus iure. Ex temporibus reiciendis nobis voluptates ipsa neque aspernatur voluptatem.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card swiper-slide">
+                        <div class="avatar">
+                            <img src="./images/avatar2.jpg" alt="Avatar 2">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Ernest Achiever</h5>
+                            <small>Web Developer</small>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi cupiditate perferendis voluptatibus iure. Ex temporibus reiciendis nobis voluptates ipsa neque aspernatur voluptatem.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card swiper-slide">
+                        <div class="avatar">
+                            <img src="./images/avatar3.jpg" alt="Avatar 3">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Edem Quist</h5>
+                            <small>Student</small>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi cupiditate perferendis voluptatibus iure. Ex temporibus reiciendis nobis voluptates ipsa neque aspernatur voluptatem.
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card swiper-slide">
+                        <div class="avatar">
+                            <img src="./images/avatar4.jpg" alt="Avatar 4">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Emma Rayn</h5>
+                            <small>Software Developer</small>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi cupiditate perferendis voluptatibus iure. Ex temporibus reiciendis nobis voluptates ipsa neque aspernatur voluptatem.
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card swiper-slide">
+                        <div class="avatar">
+                            <img src="./images/avatar5.jpg" alt="Avatar 5">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Jane Doe</h5>
+                            <small>Professional</small>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi cupiditate perferendis voluptatibus iure. Ex temporibus reiciendis nobis voluptates ipsa neque aspernatur voluptatem.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
+        </section>
+    
+        <!-- Testimonials Section Ends -->
+
+        <!-- main.js Script Link -->
         <script src="./js/main.js"></script>
+
+        <!-- Swiper JS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <!-- Swiper JS Code -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+
+              //When window width is >= 600px
+
+              breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                }
+              }
+            });
+        </script>
     </body>
 </html>
