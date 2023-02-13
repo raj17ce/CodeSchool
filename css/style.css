@@ -132,9 +132,36 @@ nav {
     justify-content: space-between;
 }
 
+nav h4 {
+    font-size: 1.8rem;
+    color: var(--color-warning);
+    transition: var(--transition);
+}
+
+nav h4 span {
+    color: var(--color-white);
+    transition: 50ms ease;
+}
+
+nav h4:hover {
+    color: var(--color-white);
+}
+
+nav h4:hover span {
+    color: var(--color-warning);
+}
+
 .window-scroll {
     background: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.window-scroll h4, .window-scroll h4 span {
+    color: var(--color-white);
+}
+
+.window-scroll h4:hover, .window-scroll h4:hover span {
+    color: var(--color-white);
 }
 
 nav button {
@@ -180,7 +207,7 @@ header {
 
 .categories {
     background: var(--color-bg1);
-    height: 29rem;
+    height: 30rem;
 }
 
 .categories h1 {
@@ -364,4 +391,85 @@ header {
     left: 46%;
     top:-1.5rem;
     transform: rotate(45deg);
+}
+
+/* Footer Section */
+
+.footer {
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer-cotainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.footer-cotainer h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer-1 a {
+    font-size: 1.5rem;
+}
+
+.footer-1 p {
+    margin-bottom: 2rem;
+}
+
+.footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+.footer ul li a {
+    transition: var(--transition);
+    display: block;
+    font-weight: 500;
+}
+
+.footer ul li a:hover {
+    color: var(--color-primary);
+    transform: translateX(-5px);
+}
+
+.footer-socials li a:hover {
+    transform: translateX(0)!important;
+    color: var(--color-primary);
+}
+
+.footer-socials {
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 3px solid var(--color-bg2);
+}
+
+.footer-copyright small {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-logo {
+    color: var(--color-warning);
+    transition: 50ms ease;
+}
+
+.footer-logo span {
+    color: var(--color-white);
+    transition: 50ms ease;
+}
+
+.footer-logo:hover {
+    color: var(--color-white);
+}
+
+.footer-logo:hover span {
+    color: var(--color-warning);
 }
