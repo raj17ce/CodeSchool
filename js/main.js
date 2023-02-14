@@ -23,3 +23,26 @@ faqs.forEach(x => {
         }
     })
 })
+
+// Nav Bar Toggle
+
+{
+    const navbar = document.querySelector(".navbar");
+    const menuOpenBtn = document.getElementById("menu-open-button");
+    const nav = document.querySelector("nav");
+
+    menuOpenBtn.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+
+        const icon = menuOpenBtn.querySelector('i');
+
+        if(icon.className == "uil uil-bars") {
+            icon.className = "uil uil-multiply"
+        }
+        else{
+            icon.className = "uil uil-bars"
+        }
+
+        nav.classList.toggle("active");
+    })
+}

@@ -125,6 +125,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 11;
+    transition: 0.4s ease-in-out;
 }
 
 .nav-container {
@@ -472,4 +473,193 @@ header {
 
 .footer-logo:hover span {
     color: var(--color-warning);
+}
+
+/* Media Query for Tab Devices */
+
+@media screen and (max-width: 1024px) {
+
+    /* Resets */
+    .container {
+        width: var(--container-width-medium);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Nav Bar */
+
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: fixed;
+        padding: 3rem 0;
+        top: -26rem;
+        left: 0;
+        width: 100vw;
+        flex-direction: column;
+        background: var(--color-primary);
+        transition: 0.7s ease;
+        z-index: -5;
+    }
+
+    .navbar a {
+        display: inline-block;
+    }
+
+    .navbar a:hover {
+        color: var(--color-white);
+        transform: translateX(-5px);
+    }
+
+    .navbar.active {
+        top: 5rem;
+    }
+
+    nav.active {
+        transition: 0.4s ease-in-out;
+        background: var(--color-primary);
+    }
+
+    /* Header Section  */
+
+    header {
+        height: fit-content;
+    }
+
+    .header-container {
+        gap: 0;
+        padding: 5rem 0;
+    }
+
+    /* Categories Section  */
+
+    .categories{
+        height: fit-content;
+    }
+
+    .categories-container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .category-left {
+        margin-right: 0;
+    }
+
+    /* Courses Section */
+
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* FAQ Section */
+
+    .faqs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-card {
+        padding: 1.5rem;
+    }
+
+    /* Footer Section */
+
+    .footer-cotainer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+/* Media Query for Mobile Devices */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: var(--container-width-small);
+    }
+
+    /* Nav Bar  */
+    .nav-container {
+        padding-right: 1rem;
+    }
+
+    /* Header Section */
+
+    .header-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem 0 5rem;
+    }
+
+    .header-right {
+        padding-top: 4rem;
+    }
+
+    .header-left p {
+        margin-top: 2rem;
+    }
+
+    /* Categories Section */
+
+    .categories-left {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .categories-right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category-card {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .category-icon {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    /* Courses Section */
+
+    .courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Testimonials Section */
+
+    .testimonial-body {
+        padding: 1.3rem;
+    }
 }
