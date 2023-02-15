@@ -135,7 +135,7 @@ nav {
 
 nav h4 {
     font-size: 1.8rem;
-    color: var(--color-danger);
+    color: var(--color-primary);
     transition: var(--transition);
 }
 
@@ -149,7 +149,7 @@ nav h4:hover {
 }
 
 nav h4:hover span {
-    color: var(--color-danger);
+    color: var(--color-primary);
 }
 
 .window-scroll {
@@ -180,7 +180,11 @@ nav button {
 }
 
 .navbar a:hover {
-    color: var(--color-bg2);
+    color: var(--color-primary);
+}
+
+nav.window-scroll a:hover {
+    color: var(--color-bg);
 }
 
 /* Header Section */
@@ -458,7 +462,7 @@ header {
 }
 
 .footer-logo {
-    color: var(--color-danger);
+    color: var(--color-primary);
     transition: 50ms ease;
 }
 
@@ -472,7 +476,7 @@ header {
 }
 
 .footer-logo:hover span {
-    color: var(--color-danger);
+    color: var(--color-primary);
 }
 
 /* Media Query for Tab Devices */
