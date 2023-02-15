@@ -116,3 +116,62 @@
 .team-member:hover .team-member-social {
     right: 0;
 }
+
+/* Media Query for Tab Devices */
+
+@media screen and (max-width: 1024px) {
+
+    /* Achievements Section */
+    
+    .achievements {
+        margin-top: 2rem;
+    }
+
+    .achievements-container {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements-left {
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    /* Team Section */
+
+    .team-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team-member {
+        padding: 1rem;
+    }
+}
+
+/* Media Query for Mobile Devices */
+
+@media screen and (max-width: 600px) {
+
+    /* Achievements Section */
+
+    .achievement-cards-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .achievements-right {
+        text-align: center;
+    }
+
+    /* Team Section */
+
+    .team-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .team-member {
+        padding: 0;
+        padding-bottom: 0.7rem;
+    }
+}
